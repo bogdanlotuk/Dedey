@@ -1,0 +1,280 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  color: #020505;
+}
+
+.container {
+  max-width: 1470px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+@font-face {
+  font-family: 'Proxima Nova Rg';
+  src: url("ProximaNova-Bold.eot");
+  src: local("Proxima Nova Bold"), local("ProximaNova-Bold"), url("../fonts/ProximaNova-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/ProximaNova-Bold.woff") format("woff"), url("../fonts/ProximaNova-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Myriad Pro';
+  src: url("MyriadPro-Bold.eot");
+  src: local("Myriad Pro Bold"), local("MyriadPro-Bold"), url("../fonts/MyriadPro-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/MyriadPro-Bold.woff") format("woff"), url("../fonts/MyriadPro-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Avenir Next Cyr';
+  src: url("AvenirNextCyr-Medium.eot");
+  src: local("Avenir Next Cyr Medium"), local("AvenirNextCyr-Medium"), url("../fonts/AvenirNextCyr-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/AvenirNextCyr-Medium.woff") format("woff"), url("../fonts/AvenirNextCyr-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+/* HEADER */
+.header__inner {
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+.form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.form__fieldset {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  padding: 0;
+}
+
+.form__fieldset-city {
+  width: 280px;
+}
+
+.form__wrap-city {
+  padding-left: 20px;
+}
+
+.form__fieldset-date {
+  width: 380px;
+}
+
+.form__fieldset-from {
+  margin-right: 53px;
+}
+
+.form__fieldset-number {
+  width: 300px;
+  justify-content: space-between;
+}
+
+.form__wrap-number {
+  margin-left: 23px;
+}
+
+.form__wrap-adult {
+  margin-left: 5px;
+}
+
+.form__wrap-children {
+  margin-left: 5px;
+}
+
+.form__fieldset-wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.form__label-city {
+  font-family: 'Myriad Pro';
+  font-size: 12px;
+  line-height: 1.2;
+  font-weight: 700;
+  letter-spacing: 0.025em;
+  color: #232323;
+  margin-bottom: 8px;
+}
+
+.form__input-city {
+  border: none;
+  font-family: 'Fira Sans', sans-serif;
+  font-size: 18px;
+  line-height: 1.2;
+  font-weight: 700;
+  font-style: italic;
+  color: #6b6b6b;
+  background: url(../img/City.png) no-repeat center left 2px;
+  width: 210px;
+  padding-left: 20px;
+}
+
+.form__label-from {
+  font-family: 'Proxima Nova Rg';
+  font-size: 12px;
+  line-height: 1.2;
+  font-weight: 700;
+  letter-spacing: 0.025em;
+  color: #232323;
+  text-transform: capitalize;
+  text-align: left;
+  margin-bottom: 6px;
+}
+
+.form__input-from {
+  border: none;
+  font-family: 'Fira Sans', sans-serif;
+  font-size: 18px;
+  line-height: 1.2;
+  font-weight: 700;
+  font-style: italic;
+  color: #383838;
+  text-align: center;
+  width: 140px;
+  background: url(../img/Calendar.png) no-repeat center left 2px;
+  padding-left: 20px;
+}
+
+.form__label-end {
+  font-family: 'Proxima Nova Rg';
+  font-size: 12px;
+  line-height: 1.2;
+  font-weight: 700;
+  letter-spacing: 0.025em;
+  color: #232323;
+  text-transform: capitalize;
+  text-align: left;
+  margin-bottom: 6px;
+}
+
+.form__input-end {
+  border: none;
+  font-family: 'Fira Sans', sans-serif;
+  font-size: 18px;
+  line-height: 1.2;
+  font-weight: 700;
+  font-style: italic;
+  color: #383838;
+  text-align: center;
+  width: 140px;
+  background: url(../img/Arrow.png) no-repeat center right 2px;
+  padding-right: 20px;
+}
+
+.form__label-number {
+  font-family: 'Myriad Pro';
+  font-size: 12px;
+  line-height: 1.2;
+  font-weight: 700;
+  letter-spacing: 0.025em;
+  color: #232323;
+  text-transform: capitalize;
+  margin-bottom: 6px;
+}
+
+.form__input-number {
+  width: 30px;
+  height: 27px;
+  border: 1px solid #8b9198;
+  font-family: 'Avenir Next Cyr';
+  font-size: 16px;
+  line-height: 1.2;
+  font-weight: 500;
+  letter-spacing: 0.025em;
+  color: #8b9198;
+}
+
+.form__label-adult {
+  font-family: 'Proxima Nova Rg';
+  font-size: 12px;
+  line-height: 1.2;
+  font-weight: 700;
+  letter-spacing: 0.025em;
+  color: #232323;
+  text-transform: capitalize;
+  margin-bottom: 6px;
+}
+
+.form__input-adult {
+  width: 30px;
+  height: 27px;
+  border: 1px solid #8b9198;
+  font-family: 'Avenir Next Cyr';
+  font-size: 16px;
+  line-height: 1.2;
+  font-weight: 500;
+  letter-spacing: 0.025em;
+  color: #8b9198;
+}
+
+.form__label-children {
+  font-family: 'Proxima Nova Rg';
+  font-size: 12px;
+  line-height: 1.2;
+  font-weight: 700;
+  letter-spacing: 0.025em;
+  color: #232323;
+  text-transform: capitalize;
+  margin-bottom: 6px;
+}
+
+.form__input-children {
+  width: 30px;
+  height: 27px;
+  border: 1px solid #8b9198;
+  font-family: 'Avenir Next Cyr';
+  font-size: 16px;
+  line-height: 1.2;
+  font-weight: 500;
+  letter-spacing: 0.025em;
+  color: #8b9198;
+}
+
+.form__plus-link {
+  display: block;
+  width: 35px;
+  height: 35px;
+  margin-right: 5px;
+}
+
+.form__btn {
+  width: 175px;
+  height: 63px;
+  background-color: #ee9b17;
+  box-shadow: 0px 0px 21px 0px rgba(0, 0, 0, 0.09);
+  border-radius: 2px;
+  border: none;
+  font-family: 'Proxima Nova Rg';
+  font-size: 16px;
+  line-height: 1.2;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  text-shadow: 0px 0px 7px rgba(0, 0, 0, 0.05);
+  color: #fff;
+  margin: 14px;
+}
+/*# sourceMappingURL=style.css.map */
