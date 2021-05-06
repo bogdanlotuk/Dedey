@@ -318,6 +318,11 @@ body {
     }
 }
 @media (max-width: 1024px) {
+    .header {
+        &__inner {
+            margin: 40px auto 0;
+        }
+    }
     .form {
         flex-wrap: wrap;
         justify-content: space-around;
