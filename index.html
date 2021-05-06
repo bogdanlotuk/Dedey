@@ -16,7 +16,7 @@
     <header class="header">
         <div class="container">
             <div class="header__inner">
-                <form class="form" action="" method="POST">
+                <form class="form" method="POST">
                     <fieldset class="form__fieldset form__fieldset-city">
                         <p class="form__fieldset-wrap form__wrap-city">
                             <label class="form__label-city" for="city">Место или название отеля</label>
@@ -32,12 +32,6 @@
                             <label class="form__label-end" for="to">выезд</label>
                             <input class="form__input-end" type="text" id="to" name="to">
                         </p>
-                        <!-- <p>
-                            <label for="from">From</label>
-                            <input type="text" id="from" name="from">
-                            <label for="to">to</label>
-                            <input type="text" id="to" name="to">
-                        </p> -->
                     </fieldset>
                     <fieldset class="form__fieldset form__fieldset-number">
                         <div class="form__fieldset-wrap form__wrap-number stepper stepper--style-1 js-spinner">
@@ -48,7 +42,6 @@
                                 <button class="form__button-down" type="button" spinner-button="down"><img src="img/Arrow_down.png" alt=""></button>
                             </div>
                         </div>
-                        
                         <div class="form__fieldset-wrap form__wrap-adult stepper stepper--style-1 js-spinner">
                             <label class="form__label-adult" for="adult">взрослые</label>
                             <input class="form__input-adult stepper__input" id="adult" type="number" min="0" max="100" step="1" value="1" autofocus>
@@ -57,7 +50,6 @@
                                 <button class="form__button-down" type="button" spinner-button="down"><img src="img/Arrow_down.png" alt=""></button>
                             </div>
                         </div>
-
                         <div class="form__fieldset-wrap form__wrap-children stepper stepper--style-1 js-spinner">
                             <label class="form__label-children" for="children">дети</label>
                             <input class="form__input-children stepper__input" id="children" type="number" min="0" max="100" step="1" value="0" autofocus>
@@ -66,8 +58,7 @@
                                 <button class="form__button-down" type="button" spinner-button="down"><img src="img/Arrow_down.png" alt=""></button>
                             </div>
                         </div>
-
-                        <a class="form__plus-link" href=""><img class="form__plus-img" src="img/Plus.png" alt=""></a>
+                        <a class="form__plus-link" href="#"><img class="form__plus-img" src="img/Plus.png" alt=""></a>
                     </fieldset>
                     <button class="form__btn" type="submit">найти</button>
                 </form>
@@ -75,7 +66,6 @@
         </div>
     </header>
     <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
-    <!-- <script src="https://code.jquery.com/jquery-1.12.4.js"></script> -->
 	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <script src="js/stepper.js"></script>
     <script src="js/main.js"></script>

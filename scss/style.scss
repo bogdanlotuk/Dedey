@@ -9,19 +9,16 @@ html {
 a {
     text-decoration: none;
 }
-
 body {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Proxima Nova Rg', sans-serif;
     font-size: 16px;
-    color: #020505;
+    color:#232323;
 }
 .container {
     max-width: 1470px; 
     padding: 0 15px;
     margin: 0 auto;
 }
-
-
 @font-face {
 	font-family: 'Proxima Nova Rg';
 	src: url('ProximaNova-Bold.eot');
@@ -32,7 +29,6 @@ body {
 	font-weight: bold;
 	font-style: normal;
 }
-
 @font-face {
 	font-family: 'Myriad Pro';
 	src: url('MyriadPro-Bold.eot');
@@ -43,7 +39,6 @@ body {
 	font-weight: bold;
 	font-style: normal;
 }
-
 @font-face {
 	font-family: 'Avenir Next Cyr';
 	src: url('AvenirNextCyr-Medium.eot');
@@ -54,12 +49,13 @@ body {
 	font-weight: 500;
 	font-style: normal;
 }
-
 /* HEADER */
 .header {
+    height: 100vh;
     &__inner {
         max-width: 1170px;
-        margin: 0 auto;
+        margin: 100px auto 0;
+        box-shadow: 0px 5px 24px -2px #AAAAAA;
     }
 }
 .form {
@@ -80,31 +76,50 @@ body {
     &__wrap-city {
         padding-left: 20px;
     }
-
     &__fieldset-date {
-        width: 380px; 
+        width: 380px;
+        position: relative; 
+    }
+    &__fieldset-date::before {
+        position: absolute;
+        content: '';
+        width: 2px;
+        height: 32px;
+        opacity: 0.81;
+        background-color: #e4e4e4;
+        border-radius: 1px;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    &__fieldset-date::after {
+        position: absolute;
+        content: '';
+        width: 2px;
+        height: 32px;
+        opacity: 0.81;
+        background-color: #e4e4e4;
+        border-radius: 1px;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
     }
     &__fieldset-from {
         margin-right: 53px;
     }
-
     &__fieldset-number {
         width: 300px;
         justify-content: space-between;
     }
-
     &__wrap-number {
-        margin-left: 23px;
+        margin-left: 25px;
     }
-
     &__wrap-adult {
         margin-left: 5px;
     }
-
     &__wrap-children {
-        margin-left: 5px;
+        margin-left: 10px;
     }
-
     &__fieldset-wrap {
         display: flex;
         flex-direction: column;
@@ -132,6 +147,11 @@ body {
         width: 210px;
         padding-left: 20px;
     }
+    &__input-city:focus {
+        border-color: #c4c4c4;
+        outline: 0;
+        box-shadow: 0 0 0 0.2rem rgba(237, 153, 21, 0.25);
+    }
     &__label-from {
         font-family: 'Proxima Nova Rg';
         font-size: 12px;
@@ -155,6 +175,11 @@ body {
         width: 140px;
         background: url(../img/Calendar.png) no-repeat center left 2px;
         padding-left: 20px;
+    }
+    &__input-from:focus {
+        border-color: #c4c4c4;
+        outline: 0;
+        box-shadow: 0 0 0 0.2rem rgba(237, 153, 21, 0.25);
     }
     &__label-end {
         font-family: 'Proxima Nova Rg';
@@ -180,9 +205,13 @@ body {
         background: url(../img/Arrow.png) no-repeat center right 2px;
         padding-right: 20px;
     }
-
+    &__input-end:focus {
+        border-color: #c4c4c4;
+        outline: 0;
+        box-shadow: 0 0 0 0.2rem rgba(237, 153, 21, 0.25);
+    }
     &__label-number {
-        font-family: 'Myriad Pro';
+        font-family: 'Myriad Pro', sans-serif;
         font-size: 12px;
         line-height: 1.2;
         font-weight: 700;
@@ -195,20 +224,17 @@ body {
         width: 30px;
         height: 27px;
         border: 1px solid #8b9198;
-        font-family: 'Avenir Next Cyr';
+        font-family: 'Avenir Next Cyr', sans-serif;
         font-size: 16px;
         line-height: 1.2;
         font-weight: 500;
         letter-spacing: 0.025em;
         color: #8b9198;
+        padding: 6px 4px;
+        text-align: center;
     }
-    &__controls {
-
-    }
-    &__button-up {}
-    &__button-down {}
     &__label-adult {
-        font-family: 'Proxima Nova Rg';
+        font-family: 'Proxima Nova Rg', sans-serif;
         font-size: 12px;
         line-height: 1.2;
         font-weight: 700;
@@ -221,15 +247,17 @@ body {
         width: 30px;
         height: 27px;
         border: 1px solid #8b9198;
-        font-family: 'Avenir Next Cyr';
+        font-family: 'Avenir Next Cyr', sans-serif;
         font-size: 16px;
         line-height: 1.2;
         font-weight: 500;
         letter-spacing: 0.025em;
         color: #8b9198;
+        padding: 6px 4px;
+        text-align: center;
     }
     &__label-children {
-        font-family: 'Proxima Nova Rg';
+        font-family: 'Proxima Nova Rg', sans-serif;
         font-size: 12px;
         line-height: 1.2;
         font-weight: 700;
@@ -242,12 +270,14 @@ body {
         width: 30px;
         height: 27px;
         border: 1px solid #8b9198;
-        font-family: 'Avenir Next Cyr';
+        font-family: 'Avenir Next Cyr', sans-serif;
         font-size: 16px;
         line-height: 1.2;
         font-weight: 500;
         letter-spacing: 0.025em;
         color: #8b9198;
+        padding: 6px 4px;
+        text-align: center;
     }
     &__plus-link {
         display: block;
@@ -255,7 +285,11 @@ body {
         height: 35px;
         margin-right: 5px;
     }
-    &__plus-img {}
+    &__plus-img {
+        object-fit: cover;
+        max-width: 100%;
+        height: auto;
+    }
     &__btn {
         width: 175px;
         height: 63px;
@@ -263,7 +297,7 @@ body {
         box-shadow: 0px 0px 21px 0px rgba(0,0,0,0.09);
         border-radius: 2px;
         border: none;
-        font-family: 'Proxima Nova Rg';
+        font-family: 'Proxima Nova Rg', sans-serif;
         font-size: 16px;
         line-height: 1.2;
         font-weight: 700;
@@ -272,5 +306,79 @@ body {
         text-shadow: 0px 0px 7px rgba(0,0,0,0.05);
         color: #fff;
         margin: 14px;
+        cursor: pointer;
+    }
+}
+/* MEDIA */
+@media (max-width: 1200px) {
+    .form {
+        &__fieldset-from{
+            margin-right: 20px;
+        }
+    }
+}
+@media (max-width: 1024px) {
+    .form {
+        flex-wrap: wrap;
+        justify-content: space-around;
+        &__fieldset-city {
+            width: 49%;
+        }
+        &__wrap-city {
+            padding-left: 0;
+        }
+        &__fieldset-date {
+            width: 49%;
+        }
+        &__fieldset-date::after {
+            display: none;
+        }
+        &__fieldset-number {
+            width: 50%;
+        }
+    }
+}
+@media (max-width: 768px) {
+    .form {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        &__fieldset-city {
+            width: 90%;
+        }
+        &__wrap-city {
+            align-items: center;
+        }
+        &__fieldset-from {
+            margin-right: 0;
+        }
+        &__input-from {
+            width: 90%;
+        }
+        &__input-end {
+            width: 90%;
+        }
+        &__fieldset-date::before {
+            display: none;
+        }
+        &__fieldset-number {
+            width: 70%;
+        }
+    }
+}
+@media (max-width: 576px) {
+    .form {
+        &__fieldset-date {
+            width: 90%;
+            flex-direction: column;
+        }
+    }
+}
+@media (max-width: 480px) {
+    .form {
+        &__fieldset-number {
+            width: 90%;
+        }
     }
 }

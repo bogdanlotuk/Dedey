@@ -24,7 +24,7 @@
   background-color: #fff;
   border-color: #c4c4c4;
   outline: 0;
-  box-shadow: 0 0 0 0.2rem rgb(237, 153, 21, 0.25);
+  box-shadow: 0 0 0 0.2rem rgba(237, 153, 21, 0.25);
 }
 
 .stepper__input::-webkit-inner-spin-button,
