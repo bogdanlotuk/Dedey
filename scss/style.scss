@@ -233,6 +233,16 @@ body {
         padding: 6px 4px;
         text-align: center;
     }
+    &__button-up:focus {
+        border-color: #c4c4c4;
+        outline: 0;
+        box-shadow: 0 0 0 0.2rem rgba(237, 153, 21, 0.25);
+    }
+    &__button-down:focus {
+        border-color: #c4c4c4;
+        outline: 0;
+        box-shadow: 0 0 0 0.2rem rgba(237, 153, 21, 0.25);
+    }
     &__label-adult {
         font-family: 'Proxima Nova Rg', sans-serif;
         font-size: 12px;
@@ -285,6 +295,11 @@ body {
         height: 35px;
         margin-right: 5px;
     }
+    &__plus-link:focus {
+        border-color: #c4c4c4;
+        outline: 0;
+        box-shadow: 0 0 0 0.2rem rgba(237, 153, 21, 0.25);
+    }
     &__plus-img {
         object-fit: cover;
         max-width: 100%;
@@ -307,6 +322,11 @@ body {
         color: #fff;
         margin: 14px;
         cursor: pointer;
+    }
+    &__btn:focus {
+        border-color: #c4c4c4;
+        outline: 0;
+        box-shadow: 0 0 0 0.2rem rgba(237, 153, 21, 0.25);
     }
 }
 /* MEDIA */
